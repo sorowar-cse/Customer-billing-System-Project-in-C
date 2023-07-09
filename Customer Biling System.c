@@ -99,7 +99,7 @@ int main()
         SetConsoleCursorPosition(
             GetStdHandle(STD_OUTPUT_HANDLE), c);
 
-        printf("\n\t\t\t\tA PROJECT BY Nusaiba, C223282");
+        printf("\n\t\t\t\tA PROJECT BY Sorowar Mahabub, C201032");
         delay(15);
 
         exit(1);
@@ -109,7 +109,7 @@ int main()
 
 void input()
 {
-    FILE *fp=fopen("nusaiba.dat","rb");
+    FILE *fp=fopen("Sorowar.dat","rb");
     fseek (fp,0,SEEK_END);
     tl=ftell(fp);
     sl=sizeof(customer);
@@ -140,7 +140,7 @@ void input()
 void writefile()
 {
     FILE *fp;
-    fp=fopen("nusaiba.dat","ab");
+    fp=fopen("Sorowar.dat","ab");
     fwrite(&customer,sizeof(customer),1,fp);
     fclose(fp);
     return;
@@ -152,7 +152,7 @@ void search()
     char nam[100];
     int n,i,m=1;
     FILE *fp;
-    fp=fopen("nusaiba.dat","rb");
+    fp=fopen("Sorowar.dat","rb");
     do
     {
         printf("\nenter your choice:   ");
